@@ -1,8 +1,9 @@
 <?php
 include '..dashboard/admin/header.php';
 ?>
-<div class="col d-flex justify-content-center">
-    <div class="card shadow-lg bg-light" style="height: 410px; margin-top : 25px;">
+<div style="background-color: #FFF8F4; min-height: 100vh; padding: 20px; display: flex; justify-content: center;">
+
+    <div class="card shadow-lg" style="height: 410px; background-color: #FFF8F4;">
         <center>
             <?php
             $level = $_SESSION['level'];

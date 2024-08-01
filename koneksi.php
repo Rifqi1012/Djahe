@@ -1,6 +1,6 @@
 <?php  
 
 date_default_timezone_set('ASIA/JAKARTA');
-$kon = mysqli_connect("localhost", "root", "", "resmindo");
+$kon = mysqli_connect("localhost", "root", "", "sirehe");
 
 ?>
