@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 01, 2024 at 07:51 PM
+-- Generation Time: Aug 10, 2024 at 07:25 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -76,6 +76,15 @@ CREATE TABLE `tb_masakan` (
   `status_masakan` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+--
+-- Dumping data for table `tb_masakan`
+--
+
+INSERT INTO `tb_masakan` (`id_masakan`, `kategori_masakan`, `nama_masakan`, `harga_masakan`, `foto`, `status_masakan`) VALUES
+(53, 'Minuman', 'Djahe Merah', 15000, '100820241151262.png', 1),
+(54, 'Makanan', 'Croissant', 20000, '100820241152044.png', 1),
+(55, 'Minuman', 'Djahe Original', 10000, '100820241152321.png', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -92,8 +101,8 @@ CREATE TABLE `tb_meja` (
 --
 
 INSERT INTO `tb_meja` (`meja_id`, `status`) VALUES
-(1, 1),
-(2, 1),
+(1, 0),
+(2, 0),
 (3, 0),
 (4, 0),
 (5, 0),
@@ -232,7 +241,7 @@ ALTER TABLE `tb_level`
 -- AUTO_INCREMENT for table `tb_masakan`
 --
 ALTER TABLE `tb_masakan`
-  MODIFY `id_masakan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `id_masakan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT for table `tb_meja`
@@ -244,7 +253,7 @@ ALTER TABLE `tb_meja`
 -- AUTO_INCREMENT for table `tb_transaksi`
 --
 ALTER TABLE `tb_transaksi`
-  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT for table `tb_user`
